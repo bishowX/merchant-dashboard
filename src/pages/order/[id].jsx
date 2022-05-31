@@ -48,7 +48,7 @@ const OrderDetail = () => {
 	}, [id]);
 
 	return (
-		<div className="container mx-auto py-8">
+		<div className="container px-4 mx-auto py-8">
 			<h1>Order details</h1>
 			{!order ? (
 				<h1>Order id doesn&apos;t match</h1>

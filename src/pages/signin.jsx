@@ -21,7 +21,7 @@ const SignIn = () => {
 	if (state.token) router.push("/");
 
 	return (
-		<div className="container mx-auto h-screen flex justify-center items-center">
+		<div className="container px-4 mx-auto h-screen flex justify-center items-center">
 			<form onSubmit={handleSignIn} className="w-full max-w-xl flex flex-col gap-4">
 				<input
 					required

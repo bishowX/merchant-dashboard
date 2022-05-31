@@ -34,7 +34,7 @@ const Order = () => {
 	};
 
 	return (
-		<div className="container mx-auto py-8">
+		<div className="container px-4 mx-auto py-8">
 			<form onSubmit={handleCreateOrder} className="flex flex-col gap-4">
 				<label htmlFor="customerName">Customer Name</label>
 				<input

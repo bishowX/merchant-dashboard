@@ -18,7 +18,7 @@ const Home = () => {
 	} = useOrder();
 
 	return (
-		<div className="container mx-auto py-4">
+		<div className="container px-4 mx-auto py-4">
 			<MerchantDetails name={brandName} description={description} image={image} />
 			<div className="flex text-center gap-4 my-8">
 				<div className="p-2  rounded bg-slate-200">
