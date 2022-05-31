@@ -43,7 +43,6 @@ const OrderDetail = () => {
 	useEffect(() => {
 		if (!id) return;
 		const filteredOrder = orders.filter((order) => order.id === Number(id))[0];
-		console.log(filteredOrder);
 		setOrder(filteredOrder);
 		setFormValues(filteredOrder);
 	}, [id]);
