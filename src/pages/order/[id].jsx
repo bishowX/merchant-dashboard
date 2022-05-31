@@ -52,7 +52,7 @@ const OrderDetail = () => {
 		<div className="container mx-auto py-8">
 			<h1>Order details</h1>
 			{!order ? (
-				<h1>Order id doesn't match</h1>
+				<h1>Order id doesn&apos;t match</h1>
 			) : (
 				<div className="container mx-auto py-8">
 					<form onSubmit={handleUpdateOrder} className="flex flex-col gap-4">

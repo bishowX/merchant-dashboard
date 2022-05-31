@@ -5,7 +5,7 @@ const withAuth = (WrappedComponent) => {
 	return (props) => {
 		// checks whether we are on client / browser or server.
 		if (typeof window !== "undefined") {
-			const Router = useRouter();
+			const router = useRouter();
 
 			const {
 				state: { token, loading },
@@ -13,7 +13,7 @@ const withAuth = (WrappedComponent) => {
 
 			if (loading) return null;
 			if (!token) {
-				Router.replace("/signin");
+				router.replace("/signin");
 				return null;
 			}
 
