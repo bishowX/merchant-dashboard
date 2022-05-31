@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { useOrder } from "../context/order-context";
 
 const RecentOrders = ({ orders }) => {
+	const router = useRouter();
 	return (
 		<table>
 			<thead>
